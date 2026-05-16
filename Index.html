@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axxel Arziki Ardi Winata - Tasyakuran Khitan</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-locked">
+
+
+    <!-- Cover Section (Envelope) -->
+    <section id="cover" class="cover-section">
+        <div class="cover-bg"></div>
+        <div class="cover-content text-center">
+            <div class="cover-box p-4 p-md-5" data-aos="zoom-in">
+                <span class="cover-sub">UNDANGAN TASYAKURAN KHITAN</span>
+                <h1 class="cover-name">Axxel Arziki Ardi Winata</h1>
+                <div class="cover-to mb-4">
+                    <h2 id="guest-name" class="small text-uppercase tracking-widest mb-2">Bapak Budi Susanto & Ibu Eriyanin (Ninin)</h2>
+                </div>
+                <button id="btn-open" class="btn-open-invitation">
+                    <i class="fas fa-envelope-open me-2"></i> BUKA UNDANGAN
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content (Hidden initially) -->
+    <main id="main-invitation" class="main-invitation">
+        
+        <!-- Music Control -->
+        <div class="music-control" id="music-toggle">
+            <div class="music-icon-wrapper">
+                <i class="fas fa-compact-disc"></i>
+            </div>
+            <audio id="bg-music" loop>
+                <source src="Music.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">AXXEL</a>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <span class="fas fa-bars-staggered"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Sidebar Menu (Offcanvas) -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title font-cinzel text-primary fw-bold">AXXEL UNDANGAN</h5>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item"><a class="nav-link px-lg-4" href="#home">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-4" href="#profile">PROFIL</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-4" href="#family">KELUARGA</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-4" href="#gallery">GALERI</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-4" href="#event">ACARA</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-4" href="#guestbook">WISHES</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <header class="hero" id="home">
+            <div class="hero-ornament top-left"><img src="https://viecreation.com/assets/img/ornament-top.png" alt=""></div>
+            <div class="hero-ornament bottom-right"><img src="https://viecreation.com/assets/img/ornament-bottom.png" alt=""></div>
+            
+            <div class="container h-100 d-flex align-items-center justify-content-center text-center">
+                <div class="hero-box position-relative z-3">
+                    <span class="hero-sub" data-aos="fade-up">TASYAKURAN KHITAN</span>
+                    <div class="hero-frame mx-auto mb-4" data-aos="zoom-in" data-aos-duration="2000" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                        <div class="frame-border"></div>
+                        <img src="img/28825.jpeg" alt="Axxel">
+                    </div>
+                    <h1 class="hero-name" data-aos="fade-up" data-aos-delay="300">Axxel Arziki Ardi Winata</h1>
+                    <p class="hero-date" data-aos="fade-up" data-aos-delay="500">Sabtu, 30 Mei 2026</p>
+                    <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="700">
+                        <div class="mouse"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Welcome Section -->
+        <section class="py-section bg-cream position-relative" id="profile">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-8">
+                        <div class="aesthetic-card glass-morphism" data-aos="fade-up">
+                            <div class="card-ornament"></div>
+                            <h2 class="script-font text-accent mb-3 h1">Assalamu'alaikum Wr. Wb.</h2>
+                            <p class="mb-5 px-md-5 lead">Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara tasyakuran khitan putra kami:</p>
+                            
+                            <div class="profile-highlight mb-5">
+                                <h3 class="name-display mb-2 display-4">Axxel Arziki Ardi Winata</h3>
+                                <p class="parent-info h5 text-muted mt-3">Putra tercinta dari <br> <strong class="text-dark">Bapak Budi Susanto & Ibu Eriyanin (Ninin)</strong></p>
+                            </div>
+                            
+                            <div class="location-badge" data-tilt data-tilt-scale="1.1">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jatikerto, Kab. Malang</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Family Section -->
+        <section class="py-section bg-white position-relative" id="family">
+            <div class="family-bg-ornament"></div>
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-down">
+                    <h2 class="section-title">Keluarga Kami</h2>
+                    <div class="title-divider"></div>
+                </div>
+                
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-10 col-xl-9">
+                        <div class="family-heritage-card" data-aos="fade-up">
+                            <div class="family-visual-wrapper">
+                                <div class="family-arch-shape"></div>
+                                <div class="family-photo-container" data-tilt data-tilt-max="3" data-tilt-speed="1000">
+                                    <img src="img/keluarga.png" alt="Keluarga Axxel" class="img-fluid family-img-premium">
+                                </div>
+                            </div>
+                            
+                            <div class="family-content-wrapper text-center mt-5">
+                                <span class="script-font text-primary h3 d-block mb-2" data-aos="fade-up">Salam Hangat Dari,</span>
+                                <h3 class="parent-name-display mb-4" data-aos="fade-up" data-aos-delay="100">Bapak Budi Susanto & Ibu Eriyanin (Ninin)</h3>
+                                
+                                <div class="family-location-footer mx-auto" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="location-inner">
+                                        <i class="fas fa-map-marked-alt"></i>
+                                        <p class="mb-0">Jl. Pahlawan Trip RT.07 RW.01 <br> Jatikerto, Kab. Malang</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="py-section bg-cream position-relative overflow-hidden" id="gallery">
+            <div class="gallery-bg-text">MEMORIES</div>
+            
+            <!-- Floating Aesthetic Ornaments -->
+            <div class="gallery-leaf leaf-1"><i class="fas fa-leaf"></i></div>
+            <div class="gallery-leaf leaf-2"><i class="fas fa-leaf"></i></div>
+            <div class="gallery-leaf leaf-3"><i class="fas fa-leaf"></i></div>
+
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Foto Keluarga</h2>
+                    <div class="title-divider"></div>
+                </div>
+
+                <div class="gallery-premium-masonry" id="gallery-grid">
+                    <!-- Photo 1 -->
+                    <a href="img/k1.jpg" class="masonry-item item-lg" data-fancybox="gallery">
+                        <div class="art-frame">
+                            <div class="washi-tape"></div>
+                            <img src="img/k1.jpg" alt="Family Moment 1">
+                            <div class="art-overlay"><i class="fas fa-expand-arrows-alt"></i></div>
+                        </div>
+                    </a>
+                    <!-- Photo 3 -->
+                    <a href="img/k3.jpg" class="masonry-item item-md" data-fancybox="gallery">
+                        <div class="art-frame">
+                            <div class="washi-tape"></div>
+                            <img src="img/k3.jpg" alt="Family Moment 3">
+                            <div class="art-overlay"><i class="fas fa-expand-arrows-alt"></i></div>
+                        </div>
+                    </a>
+                    <!-- Photo 4 -->
+                    <a href="img/k4.jpg" class="masonry-item item-sm" data-fancybox="gallery">
+                        <div class="art-frame frame-rotated-right">
+                            <div class="washi-tape tape-blue"></div>
+                            <img src="img/k4.jpg" alt="Family Moment 4">
+                            <div class="art-overlay"><i class="fas fa-expand-arrows-alt"></i></div>
+                        </div>
+                    </a>
+                    <!-- Photo 6 -->
+                    <a href="img/k6.jpg" class="masonry-item item-lg" data-fancybox="gallery">
+                        <div class="art-frame frame-rotated-left">
+                            <div class="washi-tape"></div>
+                            <img src="img/k6.jpg" alt="Family Moment 6">
+                            <div class="art-overlay"><i class="fas fa-expand-arrows-alt"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prayer Section -->
+        <section class="py-section-lg bg-fixed-overlay text-white text-center">
+            <div class="container position-relative z-2">
+                <div class="prayer-box mx-auto" data-aos="fade-up">
+                    <div class="prayer-icon mb-4"><i class="fas fa-star-and-crescent display-3 opacity-25"></i></div>
+                    <p class="prayer-text">
+                        "Ya Allah, sucikanlah dia dari dosa-dosa, panjangkanlah umurnya, jauhkanlah penyakit dari badan dan tubuhnya, tambahkanlah kekayaannya, dan jauhkanlah dia dari kefakiran"
+                    </p>
+                    <div class="prayer-line mt-4"></div>
+                    <span class="d-block mt-3 fw-bold tracking-widest text-uppercase small text-accent">DOA UNTUK SANG BUAH HATI</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Section -->
+        <section class="py-section bg-cream overflow-hidden" id="event">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="text-primary fw-bold tracking-widest small mb-2 d-block">WHEN & WHERE</span>
+                    <h2 class="section-title">Save The Date</h2>
+                    <div class="title-divider"></div>
+                </div>
+
+                <!-- Countdown -->
+                <div class="row justify-content-center mb-5 g-2 g-md-4">
+                    <div class="col-3 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timer-box-premium">
+                            <span id="days">00</span>
+                            <p>DAYS</p>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timer-box-premium">
+                            <span id="hours">00</span>
+                            <p>HOURS</p>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+                        <div class="timer-box-premium">
+                            <span id="minutes">00</span>
+                            <p>MINS</p>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+                        <div class="timer-box-premium">
+                            <span id="seconds">00</span>
+                            <p>SECS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Event Card -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-11 col-xl-10">
+                        <div class="event-master-card premium-shadow" data-aos="zoom-in" data-tilt data-tilt-max="5">
+                            <div class="row g-0">
+                                <!-- Image Side -->
+                                <div class="col-md-5 d-none d-md-block">
+                                    <div class="event-visual-side">
+                                        <div class="visual-overlay"></div>
+                                        <div class="visual-content text-white text-center p-4">
+                                            <h4 class="script-font display-3 mb-0">Tasyakuran</h4>
+                                            <p class="letter-spacing-2 opacity-75">KHITANAN</p>
+                                            <img src="img/keluarga 1.png" class="img-fluid family-img-premium"> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Content Side -->
+                                <div class="col-md-7">
+                                    <div class="event-details-side p-4 p-md-5 bg-white h-100">
+                                        <!-- Date Box -->
+                                        <div class="event-date-row mb-5" data-aos="fade-left">
+                                            <div class="d-flex align-items-center gap-3 gap-md-4">
+                                                <div class="date-number-box">
+                                                    <span class="day-name">SABTU</span>
+                                                    <span class="date-num">30</span>
+                                                    <span class="month-year text-nowrap">MEI 2026</span>
+                                                </div>
+                                                <div class="date-divider"></div>
+                                                <div class="time-info">
+                                                    <h5 class="fw-bold text-primary mb-1 small">WAKTU ACARA</h5>
+                                                    <p class="mb-0 text-dark opacity-75 h6">08:00 WIB - Selesai</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="event-info-group">
+                                            <!-- Location -->
+                                            <div class="info-item d-flex align-items-start gap-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                                                <div class="info-icon">
+                                                    <i class="fas fa-house-chimney"></i>
+                                                </div>
+                                                <div class="info-text">
+                                                    <h6 class="fw-bold mb-1 small">KEDIAMAN KELUARGA</h6>
+                                                    <p class="mb-0 text-dark opacity-75">Bapak Budi Susanto & Ibu Eriyanin</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-item d-flex align-items-start gap-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                                                <div class="info-icon">
+                                                    <i class="fas fa-map-location-dot"></i>
+                                                </div>
+                                                <div class="info-text">
+                                                    <h6 class="fw-bold mb-1 small text-uppercase letter-spacing-1">LOKASI ACARA</h6>
+                                                    <p class="mb-3 text-muted small lh-base">Jl. Pahlawan Trip RT.07 RW.01 Jatikerto, Kab. Malang</p>
+                                                    
+                                                    <!-- Live Minimap -->
+                                                    <div class="minimap-wrapper mb-4" data-aos="zoom-in" data-aos-delay="400">
+                                                        <iframe 
+                                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.336440810141!2d112.5186408!3d-8.1687841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78bc032c529d89%3A0x6b1070d5c0b11562!2sJatikerto%2C%20Kromengan%2C%20Malang%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+                                                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                                        </iframe>
+                                                    </div>
+
+                                                    <!-- Button -->
+                                                    <div class="text-center text-md-start">
+                                                        <a href="https://maps.google.com" target="_blank" class="btn-premium-action w-100 w-md-auto">
+                                                            <span>BUKA DI APLIKASI MAPS</span>
+                                                            <i class="fas fa-location-arrow ms-2"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guestbook Section -->
+        <section class="py-section bg-white" id="guestbook">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Buku Tamu</h2>
+                    <div class="title-divider"></div>
+                    <p class="text-muted tracking-widest">KIRIMKAN DOA & UCAPAN UNTUK AXXEL</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="form-container premium-shadow" data-aos="fade-up">
+                            <form id="guestbook-form">
+                                <div class="mb-4">
+                                    <label class="form-label-custom">NAMA LENGKAP</label>
+                                    <input type="text" id="nama" class="form-control-custom" placeholder="Nama Anda" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label-custom">UCAPAN & DOA</label>
+                                    <textarea id="ucapan" rows="4" class="form-control-custom" placeholder="Berikan doa & ucapan terbaik Anda..." required></textarea>
+                                </div>
+                                <div class="row g-3 mb-5">
+                                    <div class="col-6">
+                                        <input type="radio" class="btn-check" name="kehadiran" id="hadir" value="Hadir" checked>
+                                        <label class="btn btn-check-custom w-100 py-3" for="hadir">HADIR</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="radio" class="btn-check" name="kehadiran" id="absen" value="Tidak Hadir">
+                                        <label class="btn btn-check-custom w-100 py-3" for="absen">ABSEN</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-aesthetic-dark w-100 py-3 fw-bold h5">KIRIM UCAPAN</button>
+                            </form>
+
+                            <div id="ucapan-list" class="message-display mt-5 overflow-auto" style="max-height: 600px;">
+                                <!-- Render messages -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer text-center bg-cream">
+            <div class="container">
+                <h2 class="script-font text-accent display-3 mb-4" data-aos="fade-up">Terima Kasih</h2>
+                <p class="mb-5 fst-italic px-lg-5 lead" data-aos="fade-up">
+                    Kehadiran dan doa restu Bapak/Ibu/Saudara/i merupakan kado terindah <br class="d-none d-md-block"> dan kebahagiaan tak terhingga bagi kami sekeluarga.
+                </p>
+                
+                <div class="footer-family" data-aos="zoom-in">
+                    <p class="small tracking-widest text-uppercase mb-2 text-primary fw-bold">WASSALAMU'ALAIKUM WR. WB.</p>
+                    <p class="small text-muted mb-4 uppercase letter-spacing-2">HORMAT KAMI,</p>
+                    <h3 class="font-serif fw-bold display-6">Keluarga Bapak Budi Susanto <br> & Ibu Eriyanin</h3>
+                </div>
+                
+                <div class="footer-bottom mt-5 pt-5 border-top border-primary border-opacity-25">
+                    <p class="small text-muted">&copy; 2026 Digital invitation by <span class="text-primary fw-bold">Viecreation</span></p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Frameworks & Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
